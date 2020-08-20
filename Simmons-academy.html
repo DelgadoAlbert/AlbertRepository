@@ -5,17 +5,30 @@
         body{
             margin: 0;
         }    
-        #capa-logo{
+        #menu-principal{
             background-color: rgb(27, 29, 131);
             height: 140px;
         }
-        #capa-logo img{
+        #menu-principal img{
             margin: 40px 45px;
         }
         #menu-principal{
             width: 100%;
             margin: 0;
             padding: 0;
+        }
+        #menu-superior li{
+            list-style-type:none;
+            float: left;
+        }
+        #menu-superior a{
+            color:white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom-width: 2px;
+        }
+        #menu-superior a:hover{
+            border-block-color: yellow;
         }
         #menu-secundari{
             background-color: rgb(203, 233, 231);
@@ -30,6 +43,7 @@
            float: left;
            margin: 20px 20px ;
            text-decoration: none;
+           font: arial, sans-serif
         }
         #enllaç-home{
             text-decoration: none;
@@ -60,19 +74,34 @@
 
     </head>
     <body >
-    <div id="general">
-        <div id="menu-principal">
-            <div id="capa-logo">
-                <a href="file:///C:/Users/Grupo%202%20Java/Documents/GitHub/friendly-octo-potato/Simmons-University-home.html" title="Simmons University Home">
-                    <img src="Imatges/simmons-logo__header.svg" alt="Simmons University logo">
-                </a>
-            </div>
+    <div id="container">
+        <div id="header">
+            <div id="menu-principal">
+               
+                <div id="capa-menu-superior">    
+                    <div id="capa-logo">
+                    <a href="https://www.simmons.edu/" title="Simmons University Home">
+                        <img src="Imatges/simmons-logo__header.svg" alt="Simmons University logo">
+                    </div> 
+                    </a>
+                    <div id="menu-superior">
+                    <ul >
+                        <li><a href="https://www.simmons.edu/news">NEWS</a></li>
+                        <li><a href="https://www.simmons.edu/events">EVENTS</a></li>
+                        <li><a href="https://www.simmons.edu/library">LIBRARY</a></li>
+                        <li><a href="https://www.simmons.edu/alumni/give/annual-giving/ways-give">GIVE</a></li>
+                        <li><a>INFORMATION FOR</a></li>
+                        <li><a>SEARCH</a></li>
+                    </ul>
+                    </div>
+                </div>
 
+            </div>
         </div>
         <div id="menu-secundari">
             <ol>
                 <li id="enllaç-home">
-                    <a href="file:///C:/Users/Grupo%202%20Java/Documents/GitHub/friendly-octo-potato/Simmons-University-home.html">Home</a>
+                    <a href="https://www.simmons.edu/">Home</a>
                 </li>
                 <li>
                     Academics
@@ -94,42 +123,122 @@
         <div id="imatge-noies">
             <img src="Imatges/m-academics.jpg">
         </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <div id="row">
+            <div>
+                <h2>The journey starts here</h2>
+                <p>
+                    Located in the heart of Boston, Simmons is home to a respected women’s undergraduate 
+                    program, as well as coeducational graduate programs in nursing and health sciences, 
+                    liberal arts, business, communications, social work, public health, and library and 
+                    information science.
+                </p>
+                <p>
+                    Simmons combines education for leadership in high-demand professional fields with the
+                    intellectual foundation of the liberal arts. The result is a Simmons graduate prepared 
+                    not only to work, but to lead in professional, civic, and personal life — a vision of 
+                    empowerment that Simmons calls preparation for life’s work.
+                </p>
+            </div>
+        
+
+        </div>
+        <div id="padded-row">
+            <article class="checkboard">
+                <div class="checkboard-media">
+                    <img src="Imatges/Students-sitting.jpg" alt="Students stting toghether at their computers
+                    " width="650" height="440">
+                </div>
+                <div class="checkboard-text-animated">
+                    <h2 class="checkboard-text-title">Undergraduate Majors and Minors</h2>
+                    <p>
+                        Totally customizable and interdisciplinary, you’ll find over 50 majors to 
+                        choose from  — and one that’s just right for you!
+                    </p>
+                    <a class="btn" href="https://www.simmons.edu/undergraduate/academics/majors-minors">MAJORS AND MINORS</a>
+                </div>   
+            </article>
+            <article class="checkboard">    
+                    <div class="checkboard-media">
+                    <img src="Imatges/Graduate-student.html" alt="Graduate Student stting in class" width="650" height="440">
+                </div>
+                <div class="checkboard-text-animated">
+                    <h2 class="checkboard-text-title">Graduates Programs and Certificates</h2>
+                    <p>
+                        Whether you're coming straight from undergraduate study — or making a change mid-career — our programs will prepare you for your next move.
+                    </p>
+                    <a class="btn" href="https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs">PROGRAMS AND CERTIFICATES</a>
+                </div>
+            </article>
+            <article class="checkboard">
+                <div class="checkboard-media">
+                    <img src="Imatges/m-executiveeducation.jpg" alt="Students talking to each other
+                    " width="650" height="440">
+                </div>
+                <div class="checkboard-text-animated">
+                <h2 class="checkboard-text-title">Executive Education</h2>
+                <p>
+                    Executive Education is dedicated to working with organizations and individuals to 
+                    develop more diverse and successful leadership teams that can effectively meet 
+                    tomorrow’s challenges.
+                </p>
+                <a class="btn" href="https://www.simmons.edu/academics/executive-education">EXECUTIVE EDUCATION</a>
+                </div>
+            </article>
+            <article class="checkboard">
+                <div class="checkboard-media">
+                    <img src="Imatges/m-facultyresearch.jpg" alt="Student and faculty member working in a scientific lab
+                    " width="650" height="440">
+                </div>
+                <div class="checkboard-text-animated">
+                    <h2 class="checkboard-text-title">Faculty and Research</h2>
+                    <p>
+                        You’ll study with faculty who are thought-leaders and award winners, 
+                        researchers and professionals in their fields. Our professors pride themselves 
+                        on mentorship – and they’ll go the extra mile to help you succeed.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://www.simmons.edu/academics/faculty">Our faculty</a>
+                        </li>
+                        <li>
+                            <a href="https://www.simmons.edu/academics/research">Research at Simmons</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="checkboard">
+                <div class="checkboard-media">
+                    <img src="Imatges/m-collegesschoolsdepts.jpg" alt="Simmons academic campus
+                    " width="650" height="440">
+                </div>
+                <div class="checkboard-text-animated">
+                    <h2 class="checkboard-text-title">Cholleges Schools and Departments</h2>
+                    <p>
+                        Our colleges, schools and departments offer specialized resources to support and challenge you.
+                    </p>
+                    <a class="btn" href="https://www.simmons.edu/academics/colleges-schools-departments">LEARN MORE</a>
+                </div>
+            </article>
+            <div class="row-align-center">
+                <div class="column-small">
+                    <h2 class="h4 centered">
+                        <span>
+                            KNOW THE STATS
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row-align-center">
+                <div class="collumns small">
+                    <div class="proof-points">1,777</div>
+                    <div
+                </div>
+            </div>
+
+
+
+
+        </div>
     
     
     
