@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function saludar(missatge){
+        
+                window.alert(missatge);
+            }
+
+            function sumar(num1,num2){
+                window.alert(num1+num2);
+                
+            }
+            function restar(num1,num2){
+                window.alert(num1-num2);
+                
+            }
+            function multiplicar(num1,num2){
+                window.alert(num1*num2);
+                
+            }
+            function dividir(num1,num2){
+                window.alert(num1/num2);
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1></h1>
+        <input type="button" value="hola" onclick="saludar('ERRORRR')">
+        <INPUT type="button" value="adeu" onclick="saludar('ERRRRRORRR')">
+
+        <input type="button" value="suma" onclick="sumar(10,2)">
+        <input type="button" value="resta" onclick="restar(10,2)">
+        <input type="button" value="multiplicació" onclick="multiplicar(10,2)">
+        <input type="button" value="divisió" onclick="dividir(10,2)">
+
+
+
+        <input type="text" name="numero1"id="numero1">
+
+        <input type="button" onclick="restar(document.getElementById('numero1').value ,document.getElementById ('numero2').value)">
+
+        <input type="text" name="numero2"id="numero2">
+
+        <input type="button" onclick="restar(document.getElementById('numero1').value ,document.getElementById ('numero2').value)">
+
+        
+
+    </body>
+</html>
