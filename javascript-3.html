@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mostrar_data(){
+                var d= new Date();
+                var dia= d.getDate();
+                var mes= d.getMonth();
+                var any= d.getFullYear();
+                var hora= d.getHours();
+                var minuts= d.getMinutes();
+                var segons= d.getSeconds();
+            
+                
+                
+                
+                alert("DATA: "+dia+"/"+mes+"/"+any+" HORA: "+hora+":"+minuts+":"+segons);
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <h1></h1>
+    <input type="button" value="DATA:" onclick="mostrar_data()">
+
+    </body>
+</html>
