@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        #resultat{
+            background-color: burlywood;
+            width: 500px;
+            height: 500px;
+            
+        }
+        
+        
+        
+        
+        </style>
+        <script>
+            function edat(){
+                var age=document.getElementById("text-edat").value;
+                if(age>17){
+                    alert("BENVINGUT!!")
+                }
+                else{
+                    alert("HAS DE TINDRE +18 ANYS")
+                }
+            }
+
+            function temp(){
+                var temp=document.getElementById("text-edat").value;
+                var result=document.getElementById("resultat");
+                if(temp<15){
+                    resultat.innerHTML
+                }
+                else{
+                    if(temp<25){
+                    resultat.innerHTML
+                    }
+                    else(temp<=25)
+                    alert("FA CALOR")
+                                               
+                               
+                }
+
+                
+            }
+
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+    <label>Edat:  </label>
+    <input type="text" id="text-edat">
+    <input type="button" value="CONFIRMAR" onclick="edat()">
+     <br><br><br>
+     
+     <label>TEMP:  </label>
+     <input type="text" id="text-temp">
+     <input type="button" value="COMPROVAR" onclick="temp()">
+    
+    <div id=resultat></div>
+    </body>
+</html>
