@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mostrar(){
+                var prod=document.getElementById("select-producte").value
+                var resultat=document.getElementById("resultat")
+                if(prod=="bici"){
+                    resultat.innerHTML="<img src='Imatges/bicicleta.jpg'>"
+                }
+                else{
+                    if(prod=="cotxe"){
+                        resultat.innerHTML="<img src='Imatges/cotxe.jpg'>"
+                    }
+                    else {
+                        resultat.innerHTML="<img src='Imatges/moto.jpg'>"
+                    }
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+    
+    <select id="select-producte" onchange="mostrar()">
+        <option  value="cotxe">Cotxe</option>
+        <option  value="bici">bici</option>
+        <option  value="moto">moto</option>
+    </select>
+    <div id="resultat"></div>    
+
+    </body>
+</html>
