@@ -10,10 +10,10 @@
             }
             else{
                 if(plat=="amanida amb formatge de cabra"){
-                    resultat2.innerHTML="<img src='Imatges/amanida.jpg'>"
+                    resultat1.innerHTML="<img src='Imatges/amanida.jpg'>"
                 }
                 else {
-                    resultat3.innerHTML="<img src='Imatges/calamars.jpg'>"
+                    resultat1.innerHTML="<img src='Imatges/calamars.jpg'>"
                 }
             }
         }
@@ -21,14 +21,14 @@
             var plat=document.getElementById("select-segon").value
             var resultat=document.getElementById("segon-resultat")
             if(plat=="conill a la brasa"){
-                resultat4.innerHTML="<img src='Imatges/conill.jpeg'>"
+                resultat4.innerHTML="<img src='Imatges/conill.jpg'>"
             }
             else{
-                if(plat=="amanida amb formatge de cabra"){
-                    resultat5.innerHTML="<img src='Imatges/pizza.jpeg'>"
+                if(plat=="Pizza Margarita"){
+                    resultat4.innerHTML="<img src='Imatges/pizza.jpg'>"
                 }
                 else {
-                    resultat6.innerHTML="<img src='Imatges/pasta.jpg'>"
+                    resultat4.innerHTML="<img src='Imatges/pasta.jpg'>"
                 }
             }
         }
@@ -36,59 +36,84 @@
             var plat=document.getElementById("select-tercer").value
             var resultat=document.getElementById("tercer-resultat")
             if(plat=="Maduixes amb nata"){
-                resultat7.innerHTML="<img src='Imatges/nata.jpeg'>"
+                resultat7.innerHTML="<img src='Imatges/nata.jpg'>"
             }
             else{
                 if(plat=="Gelat de chocolata"){
-                    resultat8.innerHTML="<img src='Imatges/gelat.jpeg'>"
+                    resultat7.innerHTML="<img src='Imatges/gelat.jpg'>"
                 }
                 else {
-                    resultat9.innerHTML="<img src='Imatges/brownie.jpg'>"
+                    resultat7.innerHTML="<img src='Imatges/brownie.jpg'>"
                 }
             }
         }
     </script>
+    <style type="text/css">
+        
+    </style>
 
     </head>
     <body>
-    <h2>PRIMER</h2>
-    <h2>SEGON</h2>
-    <h2>TERCER</h2>    
-    
-    <select id="select-primer" onchange="primermenu()">
-        <option value="canelons">Canelons</option>
-        <option value="amanida amb formatge de cabra">Amanida formatge de cabra</option>
-        <option value="calamars a la romana">Calamars a la romana</option>
+        <table>
+            <tr>
+                <td>
+                    <h2>PRIMER</h2>
+                </td>
+                <td>
+                    <h2>SEGON</h2>
+                </td>
+                <td>
+                    <h2>TERCER</h2>
+                </td>    
+            </tr>
+            <tr>
+                <td>
 
-
-    </select>
-    <select id="select-segon" onchange="segonmenu()">
-        <option value="conill a la brasa">Conill a la brasa</option>
-        <option value="pizza margarita">Pizza Mararita</option>
-        <option value="pasta a la gorgonzola">Pasta a la gorgonzola</option>
-
-    </select>
-    <select id="select-tercer" onchange="tercermenu()">
-        <option value="maduixes amb nata">Maduixes amb nata</option>
-        <option value="gelat de chocolata">Gelat de chocolata</option>
-        <option value="brownie">Brownie</option>
-    </select>
-<div id="primer-resultat">
-    <div id="resultat1"></div>
-    <div id="resultat2"></div>
-    <div id="resultat3"></div>
-</div>
-<div id="segon-resultat">
-    <div id="resultat4"></div>
-    <div id="resultat5"></div>
-    <div id="resultat6"></div>
-</div>
-<div id="tercer-resultat">
-    <div id="resultat7"></div>
-    <div id="resultat8"></div>
-    <div id="resultat9"></div>
-</div>   
-   
+            <select id="select-primer" onchange="primermenu()">
+                <option value="canelons">Canelons</option>
+                <option value="amanida amb formatge de cabra">Amanida formatge de cabra</option>
+                <option value="calamars a la romana">Calamars a la romana</option>
+                </td>
+                <td>
+            </select>
+            <select id="select-segon" onchange="segonmenu()">
+                <option value="conill a la brasa">Conill a la brasa</option>
+                <option value="Pizza Margarita">Pizza Margarita</option>
+                <option value="pasta a la gorgonzola">Pasta a la gorgonzola</option>
+                </td>
+                <td>
+            </select>
+            <select id="select-tercer" onchange="tercermenu()">
+                <option value="Maduixes amb nata">Maduixes amb nata</option>
+                <option value="Gelat de chocolata">Gelat de chocolata</option>
+                <option value="brownie">Brownie</option>
+            </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <div id="primer-resultat">
+                        <div id="resultat1"></div>
+                        <div id="resultat2"></div>
+                        <div id="resultat3"></div>
+                    </div>
+                </td>
+                <td>
+                    <div id="segon-resultat">
+                        <div id="resultat4"></div>
+                        <div id="resultat5"></div>
+                        <div id="resultat6"></div>
+                    </div>
+                </td>
+                <td>
+                    <div id="tercer-resultat">
+                        <div id="resultat7"></div>
+                        <div id="resultat8"></div>
+                        <div id="resultat9"></div>
+                    </div>
+                </td>
+            </tr>   
+   </table>
 
     </body>
 </html>
