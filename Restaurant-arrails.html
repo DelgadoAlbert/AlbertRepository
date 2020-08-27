@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function triarplat(){
+            var plats=["<img src'imatges/canelons.jpg'>","<img src'Imatges/calamars.jpg'>"]
+            var platId=document.getElementById("plat").value;
+            var capa=document.getElementById("capafoto");
+            capa.innerHTML="plats[plat]"
+        }
+        </script>
+
+    </head>
+    <body>
+        <h1></h1>
+    <select id="plat" onchange="triarplat()">
+        <option value=" "></option> 
+        <option value="0">canelons</option>
+        <option value="1">calamars</option>  
+        <option value="2">amanida</option>
+        </select>
+    <div id="capafoto">   
+    </div>     
+    </body>
+</html>
+
+
