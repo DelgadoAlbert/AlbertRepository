@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mostrar(){
+                var fotos=["<img src='Imatges/bicicleta.jpg'>","<img src'imatges/canelons.jpg'>","<img src='Imatges/moto.jpg'>"]
+                var i=0;
+                for(i=0; i<fotos.length;i++){
+                var capa=document.getElementById("capa+i").value
+                capa.innerHTML="<img src='"+fotos[0]+"'>"
+                
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <input type="button" value="mostrar fotos" onclick="mostrar()">
+    <div id="capa0"></div>    
+
+    </body>
+</html>
